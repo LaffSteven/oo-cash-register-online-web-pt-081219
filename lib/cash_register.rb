@@ -13,7 +13,7 @@ class CashRegister
     self.add_to_price(product_price, product_qty)
   end
   
-  def self.add_to_price(price, qty = 1)
+  def add_to_price(price, qty = 1)
     @total += (price * qty)
   end
   
