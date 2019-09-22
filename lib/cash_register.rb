@@ -10,7 +10,11 @@ class CashRegister
   
   def add_item(product_name, product_price, product_qty = 1)
     @items << {product: product_name, price: product_price, qty: product_qty}
-    
+    self.add_to_price(product_price, product_qty)
+  end
+  
+  def add_to_price(price, qty = 1)
+    @total += (price * qty)
   end
   
   def apply_discount
