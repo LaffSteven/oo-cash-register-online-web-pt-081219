@@ -27,14 +27,6 @@ class CashRegister
     end
   end
   
-  def items
-    i = 0
-    item_list = []
-    @items.each do
-      item_list << @items[i][:product]
-      i+=1
-    end
-  end
   
 end
 
