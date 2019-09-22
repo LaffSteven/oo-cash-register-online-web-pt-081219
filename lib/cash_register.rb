@@ -9,7 +9,9 @@ class CashRegister
   end
   
   def add_item(item, price, qty = 1)
-    @items << item
+    qty.times do
+      @items << item
+    end
     self.add_to_price(price, qty)
   end
   
