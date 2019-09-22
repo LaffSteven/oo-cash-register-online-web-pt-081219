@@ -10,7 +10,7 @@ class CashRegister
   
   def add_item(item, price, qty = 1)
     @items << item
-    self.add_to_price(product_price, product_qty)
+    self.add_to_price(price, qty)
   end
   
   def add_to_price(price, qty = 1)
