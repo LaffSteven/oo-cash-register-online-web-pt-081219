@@ -28,7 +28,12 @@ class CashRegister
   end
   
   def items
-    @items.map.with_index {|arr, i| arr[i]}
+    i = 0
+    item_list = []
+    @items.each do
+      item_list << @items[i][:product]
+      i+=1
+    end
   end
   
 end
