@@ -19,6 +19,10 @@ class CashRegister
     @total += (price * qty)
   end
   
+  def void_last_transaction
+    
+  end
+  
   def apply_discount
     if @discount > 0
       @discount = @discount/100.to_f
