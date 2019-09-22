@@ -28,7 +28,7 @@ class CashRegister
   end
   
   def items
-    @items.map {|i| @items[i][:product]}
+    @items.map.with_index {|arr, i| arr[i][:product]}
   end
   
 end
