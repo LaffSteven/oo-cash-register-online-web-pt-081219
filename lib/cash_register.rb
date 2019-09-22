@@ -27,6 +27,10 @@ class CashRegister
     end
   end
   
+  def items
+    @items.map {|i| @items[i][:product]}
+  end
+  
 end
 
 
