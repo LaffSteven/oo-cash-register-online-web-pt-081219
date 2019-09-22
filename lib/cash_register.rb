@@ -8,8 +8,8 @@ class CashRegister
     @items = []
   end
   
-  def add_item(product_name, product_price, product_qty = 1)
-    @items << {product: product_name, price: product_price, qty: product_qty}
+  def add_item(item, price, qty = 1)
+    @items << item
     self.add_to_price(product_price, product_qty)
   end
   
